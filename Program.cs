@@ -3,77 +3,96 @@
 
 namespace Ejemplos;
 
+using System;
+using System.Collections.Generic;
+
 class Program
 {
-    static Dictionary<string, string> diccionario = new Dictionary<string, string>();
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Bienvenidos al sistema de Biblioteca");
-        int cantLibros = IngresarEntero("Ingrese la cantidad de libros a cargar: ");
-        for (int i = 0; i < cantLibros; i++)
-        {
-            llenarDiccionario();
-        }
+        // Lista de enteros
+        List<int> numeros = new List<int>();
         
-        mostrarLibros();
+        // Agregar elementos a la lista de enteros
+        numeros.Add(10);
+        numeros.Add(20);
+        numeros.Add(30);
 
-    }
-
-    private static void mostrarLibros()
-    {
-       if (diccionario.Count == 0)
+        // Mostrar los elementos de la lista de enteros
+        Console.WriteLine("Lista de enteros:");
+        foreach (int numero in numeros)
         {
-            Console.WriteLine("No hay libros cargados");
+            Console.WriteLine(numero);
         }
-        else
+
+        // Remover un elemento de la lista de enteros
+        numeros.Remove(20);
+
+        // Mostrar los elementos de la lista después de remover un elemento
+        Console.WriteLine("\nLista de enteros después de remover un elemento:");
+        foreach (int numero in numeros)
         {
-            foreach (var item in diccionario)
-            {
-                Console.WriteLine("Libro: " + item.Key + " Autor: " + item.Value);
-            }
+            Console.WriteLine(numero);
         }
-        Console.ReadLine();
-    }
 
-    private static void llenarDiccionario()
-    {
-        string libro = IngresarTexto("Ingrese el nombre del libro: ");
-        do
+        // Obtener el índice de un elemento en la lista de enteros
+        int indice = numeros.IndexOf(30);
+        Console.WriteLine("\nEl índice de 30 en la lista de enteros es: " + indice);
+
+
+        // Lista de cadenas de texto
+        List<string> palabras = new List<string>();
+
+        // Agregar elementos a la lista de cadenas de texto
+        palabras.Add("Hola");
+        palabras.Add("Mundo");
+        palabras.Add("!");
+
+        // Mostrar los elementos de la lista de cadenas de texto
+        Console.WriteLine("\nLista de cadenas de texto:");
+        foreach (string palabra in palabras)
         {
-            if (diccionario.ContainsKey(libro))
-            {
-                Console.WriteLine("Este libro ya esta cargado, ingrese otro libro");
-                libro = IngresarTexto("Ingrese el nombre del libro: ");
-            }
-        } while (diccionario.ContainsKey(libro));
+            Console.WriteLine(palabra);
+        }
 
-        string autor = IngresarTexto("Ingrese el nombre del autor: ");
-        diccionario.Add(libro, autor);
+        // Remover un elemento de la lista de cadenas de texto
+        palabras.Remove("Mundo");
 
-
-    }
-
-    private static int IngresarEntero(string msj)
-    {
-        int entero = 0;
-        do
+        // Mostrar los elementos de la lista después de remover un elemento
+        Console.WriteLine("\nLista de cadenas de texto después de remover un elemento:");
+        foreach (string palabra in palabras)
         {
-            Console.Write(msj);
-            int.TryParse(Console.ReadLine(), out entero);
-        } while (entero <= 0);
-        return entero;
+            Console.WriteLine(palabra);
+        }
 
-    }
 
-    static string IngresarTexto(string msj)
-    {
-        string texto;
-        do
+        // Lista de fechas
+        List<DateTime> fechas = new List<DateTime>();
+
+        // Agregar elementos a la lista de fechas
+        fechas.Add(new DateTime(2024, 3, 19));
+        fechas.Add(new DateTime(2024, 3, 20));
+        fechas.Add(new DateTime(2024, 3, 21));
+
+        // Mostrar los elementos de la lista de fechas
+        Console.WriteLine("\nLista de fechas:");
+        foreach (DateTime fecha in fechas)
         {
-            Console.Write(msj);
-            texto = Console.ReadLine();
-        } while (texto == "");
-        return texto;
-    }
+            Console.WriteLine(fecha.ToShortDateString());
+        }
 
+        // Remover un elemento de la lista de fechas
+        fechas.RemoveAt(0);
+
+        // Mostrar los elementos de la lista después de remover un elemento
+        Console.WriteLine("\nLista de fechas después de remover un elemento:");
+        foreach (DateTime fecha in fechas)
+        {
+            Console.WriteLine(fecha.ToShortDateString());
+        }
+
+        // Esperar que se presione una tecla antes de salir
+        Console.ReadKey();
+    }
 }
+

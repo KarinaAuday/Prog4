@@ -12,3 +12,4 @@ C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\refint\Ejemplos.dll
 C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.pdb
 C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.genruntimeconfig.cache
 C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\ref\Ejemplos.dll
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.sourcelink.json
