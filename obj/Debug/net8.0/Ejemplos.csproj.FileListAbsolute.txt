@@ -1,0 +1,14 @@
+C:\Karina\ORT\PROG4to\Ejemplos\bin\Debug\net8.0\Ejemplos.exe
+C:\Karina\ORT\PROG4to\Ejemplos\bin\Debug\net8.0\Ejemplos.deps.json
+C:\Karina\ORT\PROG4to\Ejemplos\bin\Debug\net8.0\Ejemplos.runtimeconfig.json
+C:\Karina\ORT\PROG4to\Ejemplos\bin\Debug\net8.0\Ejemplos.dll
+C:\Karina\ORT\PROG4to\Ejemplos\bin\Debug\net8.0\Ejemplos.pdb
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.AssemblyInfoInputs.cache
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.AssemblyInfo.cs
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.csproj.CoreCompileInputs.cache
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.dll
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\refint\Ejemplos.dll
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.pdb
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\Ejemplos.genruntimeconfig.cache
+C:\Karina\ORT\PROG4to\Ejemplos\obj\Debug\net8.0\ref\Ejemplos.dll
